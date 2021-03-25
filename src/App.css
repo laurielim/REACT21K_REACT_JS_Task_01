@@ -3,22 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
-.flow * + * {
-  margin-top: 1rem;
-}
 
-body {
-  background-color: teal;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+header,
+main,
+footer {
+  display: flex;
+  align-items: center;
 }
 
 header,
 footer {
-  height: 15vh;
+  min-height: 15vh;
   background-color: orangered;
 }
 
 main {
-  height: 70vh;
+  min-height: 70vh;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: purple;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
 }
